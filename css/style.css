@@ -377,6 +377,15 @@ img {
   background: var(--general-bg);
 }
 
+.infobox {
+  display: flex;
+  align-items: baseline;
+}
+
+.temporarily {
+  margin-right: 70px;
+}
+
 .footer .logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -411,6 +420,45 @@ img {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.03em;
+}
+
+.common {
+  margin: 0;
+  margin-bottom: 20px;
+  color: var(--primary-white-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.socials {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.socials .item-cocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  --color3: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.socials .item-cocial:hover,
+.socials .item-cocial:focus {
+  background-color: var(--accent-color);
+}
+
+.socials .item:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* Portfolio */
