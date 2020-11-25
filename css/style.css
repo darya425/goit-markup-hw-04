@@ -212,6 +212,16 @@ img {
   margin-right: 30px;
 }
 
+.method-items .thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 120px;
+  margin-bottom: 30px;
+  background: var(--accent-bg-color);
+}
+
 .method-subtitle {
   margin: 0;
   margin-bottom: 10px;
