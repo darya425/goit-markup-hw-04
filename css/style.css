@@ -334,6 +334,7 @@ img {
   --color3: var(--primary-white-color);
 }
 
+/* regular-clients */
 .regular-clients {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -345,6 +346,7 @@ img {
 
 .clients {
   display: flex;
+
   margin: 0;
   padding: 0;
 }
@@ -501,6 +503,7 @@ img {
 .button-items .btn:focus {
   color: var(--primary-white-color);
   background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .galery-items {
@@ -517,6 +520,11 @@ img {
 
 .galery-items .item {
   width: 370px;
+}
+
+.galery-items .item:hover,
+.galery-items .item:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .galery-items .item:not(:nth-child(3n)) {
