@@ -119,20 +119,23 @@ img {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
+  --color4: var(--accent-color);
 }
 
 /* Auth-nav */
 .auth-nav {
   display: flex;
+  align-items: baseline;
   margin: 0;
   margin-left: auto;
   padding: 0;
 }
 
 .auth-nav .link {
-  display: block;
+  display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 
   color: var(--primary-text-color);
   font-weight: 500;
@@ -141,14 +144,28 @@ img {
   letter-spacing: 0.02em;
 }
 
+.icon-auth {
+  margin-right: 10px;
+}
+
 /* Hero */
 .hero {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 
   background: var(--general-bg);
   text-align: center;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
 .hero-title {
   margin: 0;
   margin-bottom: 30px;
